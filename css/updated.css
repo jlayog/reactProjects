@@ -1,0 +1,162 @@
+body {
+    background-image: linear-gradient(#ffca9d, #ffefe1);
+}
+
+nav li a {
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #292929;
+}
+
+#intro {
+    display: block;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+}
+
+.cloud {
+    position: absolute;
+    z-index: -1;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud1 {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    object-fit: scale-down;
+    opacity: .65;
+    z-index: -3;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud2 {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    object-fit: scale-down;
+    opacity: .45;
+    z-index: -4;
+    animation-duration: 68s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud3 {
+    position: absolute;
+    width: 175px;
+    height: 350px;
+    opacity: .85;
+    z-index: -2;
+    object-fit: scale-down;
+    animation-duration: 72s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud4 {
+    position: absolute;
+    width: 125px;
+    height: 275px;
+    opacity: .50;
+    z-index: -4;
+    object-fit: scale-down;
+    animation-duration: 74s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud5 {
+    position: absolute;
+    left: 0px;
+    height: 225px;
+    width: 450px;
+    opacity: .85;
+    z-index: -2;
+    object-fit: scale-down;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+.cloud6 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    opacity: .7;
+    z-index: -3;
+    object-fit: scale-down;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-name: moveCloud;
+    overflow: hidden;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translate(-1250px,0);
+    }
+    100% {
+        transform: translate(1250px, 0);
+    }
+}
+
+#intro .me {
+    margin-right: 1rem;
+    z-index: 1;
+}
+
+#intro p {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+}
+
+#projects h2 {
+    font-family: 'VT323', monospace;
+}
+
+#projectimg {
+    object-fit: contain;
+    height: 22em;
+    width: 35em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+}
+
+#projects h3 {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 2em;
+}
