@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+body {
+  font-family: 'VT323', monospace;
+  margin: 0;
+  background-image: linear-gradient(#ffca9d, #ffefe1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.Avatar {
+  border-radius: 50%;
+}
