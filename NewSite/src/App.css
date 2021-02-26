@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.bg-animation {
+  overflow: hidden;
+  margin: 0;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  background-color: #f0f3ff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 3px solid #d06580;
+  margin: 0px auto;
+  z-index: 99;
+}
+
+.link-wrap {
+  background: none;
+  max-width: 1200px;
+  text-align: left;
+  position: initial;
+  width: 100%;
+}
+
+.p-link {
+  display: inline;
+  margin: 0 20px;
+  padding: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.single-card {
+  top: 40px;
+  background-color: #c4c4c4;
+  height: 300px;
+  width: 400px;
+  padding: 0;
+  margin: 80px 0 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.footer {
+  background-color: #1b242f;
+  padding: 70px 0 50px 0;
+  text-align: center;
+  color: #fff
+}
