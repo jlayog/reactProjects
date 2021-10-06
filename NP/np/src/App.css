@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+main {
+  background-color: #333969;
+}
+
+.dialogue-box {
+  background-color: #1d2459;
+  padding: 1.5rem 2rem;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  cursor: pointer;
+  z-index: 100;
+  min-width: 400px;
+  max-width: 60%;
+  width: 500px;
+  height: 150px;
+}
+
+.dialogue-box #typewriter-line {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  margin-bottom: 0;
+  height: 90%;
+}
+
+.dialogue-box #typewriter-line:after {
+  content: "|";
+  animation: caret 500ms linear infinite alternate;
+}
+
+@keyframes caret {
+  0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes caret {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes caret {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.nextButton .btn-primary {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  float: right;
+  padding: 0;
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  from { opacity: 1.0; }
+  50% { opacity: 0; }
+  to { opacity: 1.0; }
+}
+
+.chevIcon {
+  display: block;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  height: auto;
+  width: 4rem;
+  cursor: pointer;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0%   { top: 95%; }
+  50%  { top: 97%; }
+  100% { top: 95%; }
+}
+
+div svg {
+  cursor: default;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.section-title {
+  color: #fff;
+}
+
+
+.skills-col-title {
+  margin-bottom: 2rem;
+}
+
+.skills-col-title p {
+  color: #d5d5d5;
+  font-size: 24px;
+}
+
+.skills-col {
+  margin-bottom: 25px;
+}
+
+.skillbox {
+  background-color: #1d2459;
+  padding: 1.5rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: 100;
+  max-width: 100%;
+  height: 100%;
+}
+
+.skill-text {
+  font-size: 20px;
+}
+
+.ioChip {
+  height: auto;
+  width: 4rem;
+  color: #f29585;
+  position: relative;
+  margin: 2rem 0 1rem;
+}
+
+.faCheck {
+  color: #73B954;
+  font-weight: 400;
+  height: auto;
+  width: 2rem;
+  margin-right: 25px;
+}
