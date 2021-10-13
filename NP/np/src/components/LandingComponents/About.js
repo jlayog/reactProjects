@@ -23,14 +23,14 @@ const About = () => {
 
     const [{content, carriage}, setContent] = useState({content:'', carriage: 0})
 
-    const typeWrite = () => {
-        if(carriage === srcString.length) {
-            return 
-            const delay = setTimeout(() => {
+    useEffect(() => {
+        if(carriage === srcString.length)
+        return 
+        const delay = setTimeout(() => {
             setContent({content: content+srcString[carriage], carriage: carriage+1})
             clearTimeout(delay)
-            }, 100)
-        } [content]}
+        }, 100)
+    }, [content])
     
     return(
         <section id="about">
@@ -38,7 +38,7 @@ const About = () => {
                 <Row className="justify-content-md-center">
                     <Col md="auto">
                         <div className="dialogue-box">
-                            <p id="typewriter-line">{content}</p>
+                            <p>{content}</p>
                             <div className="nextButton">
                                 <Button>▼</Button>
                             </div>
@@ -46,7 +46,6 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
-
         </section>
     )   
 }
