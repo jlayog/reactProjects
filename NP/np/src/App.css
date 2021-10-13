@@ -23,7 +23,7 @@ main {
   height: 150px;
 }
 
-.dialogue-box #typewriter-line {
+.dialogue-box .typewriter-line {
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Roboto Mono', monospace;
@@ -32,7 +32,7 @@ main {
   height: 90%;
 }
 
-.dialogue-box #typewriter-line:after {
+.dialogue-box .typewriter-line:after {
   content: "|";
   animation: caret 500ms linear infinite alternate;
 }

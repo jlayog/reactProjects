@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { dialogue } from '../../datalist';
 
 
 const About = () => {
-    const dialogue = [
-        
-    ];
     
     const [counter, setCounter] = useState(0);
+    const [sentence, setSentence] = useState(dialogue[counter]);
 
     const grabQuote = () => {
-        if(counter < dialogue.length-1) {
-            setCounter(counter + 1);
-        } else {
+        console.log('Clicked!');
+        if (counter === dialogue.length-1) {
             setCounter(0);
+            setSentence(dialogue[0]);
+        } else {
+            setSentence(dialogue[counter + 1]);
+            setCounter((oldState) => oldState + 1);
         }
-        var result = dialogue[counter];
-        return result;
-    }
+    };
 
     const srcString = 'Hi my name is Jerel.';
 
@@ -30,7 +30,7 @@ const About = () => {
             setContent({content: content+srcString[carriage], carriage: carriage+1})
             clearTimeout(delay)
         }, 100)
-    }, [content])
+    }, [content]) 
     
     return(
         <section id="about">
@@ -38,7 +38,7 @@ const About = () => {
                 <Row className="justify-content-md-center">
                     <Col md="auto">
                         <div className="dialogue-box">
-                            <p>{content}</p>
+                            <p className="typewriter-line" onClick={grabQuote}>{sentence}</p>
                             <div className="nextButton">
                                 <Button>▼</Button>
                             </div>
