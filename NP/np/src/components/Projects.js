@@ -8,9 +8,9 @@ const Projects = () => {
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           
-          <h1 className="text-center text-white">
-            Apps I've Built
-          </h1>
+          <h2 className="text-center text-white">
+            Things I've Built
+          </h2>
           <p className="text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
             facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam

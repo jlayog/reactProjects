@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'pixelmix';
+  src: local('pixelmix'), url(./assets/fonts/pixelmix.ttf) format('truetype');
+}
 
 main {
   background-color: #333969;
+  font-family: 'pixelmix', sans-serif;
 }
 
-.dialogue-box {
+.dialogWindow {
   background-color: #1d2459;
   padding: 1.5rem 2rem;
-  border: 5px solid #fff;
-  border-radius: 5px;
+  border-image: url('./assets/dialogboxbg.png')28 / 10px 10px 10px 10px stretch;
+  border-width: 5px;
+  border-style: solid;
   overflow: hidden;
   position: absolute;
   top: 60%;
@@ -23,16 +28,17 @@ main {
   height: 150px;
 }
 
-.dialogue-box .typewriter-line {
+.dialogMessage {
   color: #fff;
-  font-size: 1.2rem;
-  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
+  font-family: 'pixelmix', sans-serif;
   font-weight: 400;
   margin-bottom: 0;
   height: 90%;
 }
 
-.dialogue-box .typewriter-line:after {
+.dialogMessage:after {
+  font-size: 1.3rem;
   content: "|";
   animation: caret 500ms linear infinite alternate;
 }
@@ -52,7 +58,7 @@ main {
 	100%{opacity: 1;}
 }
 
-.nextButton .btn-primary {
+.nextButton {
   display: block;
   background-color: transparent;
   border: none;
@@ -91,15 +97,6 @@ div svg {
   cursor: default;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .section-title {
   color: #fff;
 }
@@ -110,7 +107,7 @@ div svg {
 }
 
 .skills-col-title p {
-  color: #d5d5d5;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -121,8 +118,9 @@ div svg {
 .skillbox {
   background-color: #1d2459;
   padding: 1.5rem 2rem;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  border-image: url('./assets/dialogboxbg.png')28 / 10px 10px 10px 10px stretch;
+  border-width: 5px;
+  border-style: solid;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -149,4 +147,8 @@ div svg {
   height: auto;
   width: 2rem;
   margin-right: 25px;
+}
+
+#projects p {
+  color: #fff;
 }

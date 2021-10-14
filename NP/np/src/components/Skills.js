@@ -11,9 +11,9 @@ const Skills = () => {
             <Row className="justify-content-md-center">
                 <Col md="auto" className="text-center skills-col-title">
                     <IoHardwareChipSharp className="ioChip"/>
-                    <h1 className="section-title">
+                    <h2 className="section-title">
                         Skills &amp; Technologies
-                     </h1>
+                     </h2>
                     <p>
                       Here are some technologies I have worked with.
                     </p>
