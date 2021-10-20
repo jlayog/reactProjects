@@ -10,6 +10,8 @@ const MainNavbar = () => {
                 <Nav className="me-auto" activeKey="/home">
                     <Nav.Item>
                         <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="/blog">Blog</Nav.Link>
+                        <Nav.Link href="https://www.github.com/jlayog">Github</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Container>
